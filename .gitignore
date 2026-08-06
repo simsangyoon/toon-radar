@@ -1,0 +1,10 @@
+# 이 저장소는 공개다. 앱 HTML과 README 외에는 절대 들어오지 않게 한다.
+# (봇 코드에는 Gmail 앱 비밀번호가 들어있으므로 여기로 복사하지 말 것)
+*.py
+*.json
+*.bat
+*.ps1
+toon_brief.html
+peek.js
+extract.js
+check.js
