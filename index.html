@@ -210,7 +210,7 @@
         <span class="radar"></span>
         <div>
           <h1>TOON RADAR</h1>
-          <div class="sub">만화 · 웹툰 · 그래픽노블 · 애니메이션 · AI 애니 기회 레이더 <span class="build">build 0807-g</span></div>
+          <div class="sub">만화 · 웹툰 · 그래픽노블 · 애니메이션 · AI 애니 기회 레이더 <span class="build">build 0807-h</span></div>
         </div>
       </div>
       <div class="today">
@@ -295,7 +295,8 @@
 
 <footer class="wrap">
   <div>TOON RADAR · <b>만화·애니 창작자를 위한 기회 레이더</b></div>
-  <div><b id="fc"></b>개 기회 · <b id="fp"></b>개 창구 · <b id="fm"></b>개 매체</div>
+  <div><b id="fc"></b>개 기회 · <b id="fp"></b>개 창구 · <b id="fm"></b>개 매체 ·
+    <a href="archive/" style="color:var(--fund); text-decoration:none">📬 지난 브리핑</a></div>
 </footer>
 
 <script>
@@ -321,11 +322,11 @@ const MO = ['','1월','2월','3월','4월','5월','6월','7월','8월','9월','1
 
 const EVENTS = [
 /* ═══════════ 한국 ═══════════ */
-{c:'kr',f:['t','g'],country:'한국',rgroup:'한국',name:'창작 초기 단계 만화·웹툰 기획 공모 (한국만화영상진흥원)',months:[2,3],sub:3,ev:0,when:'접수 3월 초~중순 (3/3~3/19)',desc:'기획안 단계의 만화·웹툰 창작 지원. 과제당 포상금 600만원 규모로 100과제 이상 선정',url:'https://www.komacon.kr'},
-{c:'kr',f:['t','g'],country:'한국',rgroup:'한국',name:'다양성만화 제작지원 (한국만화영상진흥원)',months:[2,3],sub:3,ev:0,when:'접수 3월 (창작자 부문)',desc:'상업성보다 작품성·실험성 중심 만화 창작 지원. 신인·독립 작가에게 유리',url:'https://www.komacon.kr'},
+{c:'kr',f:['t','g'],country:'한국',rgroup:'한국',name:'창작 초기 단계 만화·웹툰 기획 공모 (한국만화영상진흥원)',months:[2,3],sub:3,ev:0,dl:'03-19',when:'접수 3월 초~중순 (3/3~3/19)',desc:'기획안 단계의 만화·웹툰 창작 지원. 과제당 포상금 600만원 규모로 100과제 이상 선정',url:'https://www.komacon.kr'},
+{c:'kr',f:['t','g'],country:'한국',rgroup:'한국',name:'다양성만화 제작지원 (한국만화영상진흥원)',months:[2,3],sub:3,ev:0,dl:'03-19',when:'접수 3월 (창작자 부문)',desc:'상업성보다 작품성·실험성 중심 만화 창작 지원. 신인·독립 작가에게 유리',url:'https://www.komacon.kr'},
 {c:'kr',f:['t'],country:'한국',rgroup:'한국',name:'만화·웹툰 분야 창업기업 육성 지원 (콘진원)',months:[2,3],sub:3,ev:0,when:'접수 초봄 (연도별 공고)',desc:'웹툰 스튜디오·1인 창작기업의 시장 진입 지원, 사업화 자금+멘토링',url:'https://www.kocca.kr'},
 {c:'kr',f:['t','g'],country:'한국',rgroup:'한국',name:'만화·웹툰 번역 등 해외진출 지원 (콘진원)',months:[3,7],sub:3,ev:0,when:'1차 봄 · 2차 여름 모집',desc:'번역·현지화·해외 플랫폼 진출 비용 지원. 이미 연재/출판 중인 작품 대상',url:'https://www.kocca.kr'},
-{c:'kr',f:['a'],country:'한국',rgroup:'한국',name:'애니메이션 제작지원 — 독립·극장용 (단편/중편/장편)',months:[2,3],sub:3,ev:0,when:'접수 2~3월 (2/19~3/6)',desc:'콘진원 대표 애니 지원. 단편 부문만 4.8억 규모, 단계별(장편 1·2단계) 지원',url:'https://www.kocca.kr'},
+{c:'kr',f:['a'],country:'한국',rgroup:'한국',name:'애니메이션 제작지원 — 독립·극장용 (단편/중편/장편)',months:[2,3],sub:3,ev:0,dl:'03-06',when:'접수 2~3월 (2/19~3/6)',desc:'콘진원 대표 애니 지원. 단편 부문만 4.8억 규모, 단계별(장편 1·2단계) 지원',url:'https://www.kocca.kr'},
 {c:'kr',f:['a'],country:'한국',rgroup:'한국',name:'애니메이션 제작지원 — 초기·기초본편 (콘진원)',months:[2,3],sub:3,ev:0,when:'접수 2~3월',desc:'상업 본편 애니메이션 초기 제작 지원. 방송·극장 유통 연계',url:'https://www.kocca.kr'},
 {c:'kr',f:['a'],country:'한국',rgroup:'한국',name:'애니메이션 기획개발 공모전 (콘진원·스토리움)',months:[4,5],sub:5,ev:0,when:'접수 봄 (연도별 변동)',desc:'시나리오 부문 + 독립단편 기획안 부문. 수상작은 애니메이션 부트캠프 연계 컨설팅',url:'https://storyum.kr'},
 {c:'kr',f:['a'],country:'한국',rgroup:'한국',name:'지역 애니메이션 콘텐츠 제작지원 (제주·부산 등)',months:[3,4],sub:4,ev:0,when:'기관별 봄 공고 (추가모집 수시)',elig:'⚠ 해당 지역 소재 기업·창작자 대상 (기관별 요건 상이)',desc:'지자체 애니 제작지원. 기획개발·본편 단계별 지원',url:'https://www.kocca.kr'},
@@ -335,7 +336,7 @@ const EVENTS = [
 {c:'kr',f:['t','g','a'],country:'한국',rgroup:'한국',name:'초기창업패키지 (창업진흥원)',months:[1,2],sub:2,ev:0,when:'접수 1~2월',desc:'창업 3년 이내 기업 성장·안정화 지원',url:'https://www.k-startup.go.kr'},
 {c:'kr',f:['t','a'],country:'한국',rgroup:'한국',name:'문화콘텐츠 예비창업자 패키지',months:[4],sub:4,ev:0,when:'접수 4월',desc:'웹툰·애니·실감콘텐츠 특화 예비창업 지원',url:'https://www.k-startup.go.kr'},
 {c:'kr',f:['t','g','a','i'],country:'한국',rgroup:'한국',name:'예술활동증명 (한국예술인복지재단)',months:[],rolling:true,sub:0,ev:0,when:'상시 신청 · 심사 수 주 소요',elig:'만화·웹툰·애니 창작자도 대상. 활동 실적(발표작·계약·수입 등)으로 증명하며 분야별 기준 상이',desc:'★ 아래 예술인 지원사업 대부분의 전제 조건. 먼저 받아두지 않으면 준비금·융자·파견 모두 신청 불가',url:'https://www.kawf.kr'},
-{c:'kr',f:['t','g','a','i'],country:'한국',rgroup:'한국',name:'예술활동준비금 (구 창작준비금, 한국예술인복지재단)',months:[3,4],sub:4,ev:0,when:'접수 3/23~4/17 (4주간)',run:'지원금 300만원 · 예술인경력정보시스템 온라인 접수 (고령·장애 예술인은 우편 대행)',elig:'⚠ 예술활동증명 유효 + 직전년도 개인소득 중위소득 120% 이하 + 만 19세 이상 · 전년도 수혜자·외국인·타 기관 창작준비금 중복 수혜자 제외',desc:'예술인 대상 대표 현금 지원. 만화·웹툰 작가도 예술활동증명만 있으면 신청 가능',url:'https://www.kawfartist.net'},
+{c:'kr',f:['t','g','a','i'],country:'한국',rgroup:'한국',name:'예술활동준비금 (구 창작준비금, 한국예술인복지재단)',months:[3,4],sub:4,ev:0,dl:'04-17',when:'접수 3/23~4/17 (4주간)',run:'지원금 300만원 · 예술인경력정보시스템 온라인 접수 (고령·장애 예술인은 우편 대행)',elig:'⚠ 예술활동증명 유효 + 직전년도 개인소득 중위소득 120% 이하 + 만 19세 이상 · 전년도 수혜자·외국인·타 기관 창작준비금 중복 수혜자 제외',desc:'예술인 대상 대표 현금 지원. 만화·웹툰 작가도 예술활동증명만 있으면 신청 가능',url:'https://www.kawfartist.net'},
 {c:'kr',f:['t','g','a','i'],country:'한국',rgroup:'한국',name:'K-Art 청년 창작자 지원 (아르코·지자체 공동)',months:[3,4],sub:4,ev:0,when:'접수 봄 (2026년 3월 공고)',run:'연 900만원 창작지원금 · 3,000명 규모 · 17개 지자체·문화재단 공동 수행',elig:'⚠ 만 39세 이하(1986.1.1. 이후 출생) 기초예술 분야 청년 창작자 · 만화·웹툰 포함 여부는 해당 연도 공고에서 확인',desc:'청년 창작자 대상 최대 규모 지원. 시각예술·다원예술 등 기초예술 분야 대상',url:'https://www.arko.or.kr'},
 {c:'kr',f:['t','g','a','i'],country:'한국',rgroup:'한국',name:'아르코 문예진흥기금 지원사업 공모 (한국문화예술위원회)',months:[9,10],sub:10,ev:0,when:'익년 사업 공모 가을 접수 (9월 말~)',run:'연간 총 600억원대 규모 · 분야별 세부사업 다수(창작·발표·국제교류 등)',elig:'분야·사업별 자격 상이 · 시각예술/다원예술 세부사업에 만화·일러스트 기반 프로젝트 신청 사례 있음',desc:'국내 최대 규모 예술 지원 공모. 가을에 다음 해 사업을 한꺼번에 공고',url:'https://www.arko.or.kr'},
 {c:'kr',f:['t','g','a','i'],country:'한국',rgroup:'한국',name:'서울문화재단 예술지원 통합공모',months:[11,12],sub:12,ev:0,when:'통합공모 연말~연초 (연도별 공고 확인)',elig:'서울 거주·활동 예술인 및 단체 · 세부사업별 요건 상이',desc:'예술창작활동지원·최초예술지원 등을 묶은 통합 공모. 신청은 서울문화예술지원시스템(SCAS)',url:'https://www.sfac.or.kr'},
@@ -345,20 +346,20 @@ const EVENTS = [
 {c:'kr',f:['t','g','a','i'],country:'한국',rgroup:'한국',name:'예술인 파견지원사업 (한국예술인복지재단)',months:[1,2,3],sub:3,ev:0,when:'접수 연초 (연도별 공고)',elig:'예술활동증명 보유자 · 참여 시 활동비 지급',desc:'기업·기관에 예술인이 파견돼 협업하는 사업. 창작 외 안정적 수입원으로 활용됨',url:'https://www.kawf.kr'},
 {c:'kr',f:['t','g','a'],country:'프랑스',rgroup:'유럽',name:'La Maison des auteurs 창작 레지던시 (앙굴렘)',months:[],rolling:true,sub:0,ev:0,when:'상시 접수 · 전문가 위원회 심사',run:'2개월~2년 스튜디오 레지던시 · 작업실·장비 제공 (지원 조건은 프로그램별 상이)',elig:'만화가·일러스트레이터·애니메이션 감독 대상 · 프로젝트 심사제, 국적 제한 없음(별도 국가별 프로그램은 해당국 국적 요건 있음)',desc:'★ 앙굴렘 만화도시가 운영하는 세계적 만화 창작 레지던시. 유럽 출판 접점까지 이어지는 루트',url:'https://www.citebd.org/en'},
 {c:'kr',f:['t','g','a'],country:'한국',rgroup:'한국',name:'스토리움 스토리 공모·매칭 (콘진원)',months:[],rolling:true,sub:0,ev:0,when:'상시 등록 + 회차별 공모',desc:'원천 스토리 등록·평가 플랫폼. 웹툰·애니 IP 사업화 매칭',url:'https://storyum.kr'},
-{c:'fund',f:['t'],country:'한국',rgroup:'한국',name:'네이버웹툰 지상최대공모전 (슈퍼루키전)',months:[3,4],sub:4,ev:0,when:'접수 4월 초 (1기 4/6~4/10) · 기수제 운영',run:'1화 완성 원고 + 2~3화 글콘티 + 20~30화 완결 시놉시스 · 스크롤뷰 가로 690px JPG · 화당 컷 수 제한 없음',elig:'⚠ 만 15세 이상 + 플랫폼 정식 연재 경력이 없는 신인만 · 본인이 온전한 저작권 보유',desc:'국내 최대 규모 웹툰 공모전. 대상 2천만원·최우수 1천만원, 수상 시 정식 연재·매니지먼트 연결',url:'https://comic.naver.com'},
-{c:'fund',f:['t'],country:'한국',rgroup:'한국',name:'레진&봄툰 노블코믹스 각색 콘티 공모전',months:[5,6],sub:6,ev:0,when:'접수 5/13~6/15 (연도별 변동)',run:'웹소설 원작을 웹툰 콘티로 각색해 제출 · 수상 시 상금 100만원 + 연재 계약',elig:'만 19세 이상 · 개인 자격 1인 1작품 · 기성·신인 모두 응모 가능',desc:'성인 로맨스 노블코믹스 각색 콘티 공모. 연재처 확보로 바로 이어지는 구조',url:'https://www.lezhin.com'},
-{c:'award',f:['t','g'],country:'일본',rgroup:'일본',name:'일본 국제만화상 (Japan International MANGA Award, 외무성)',months:[4,5,6],sub:6,ev:0,when:'접수 4/15~6/30 (제20회 기준)',run:'16페이지 초과 · 최근 3년 내 창작 · 기출간/미출간 모두 가능 · PDF 또는 인쇄본 · 언어 무관 · ⚠ 플롯·구성·작화를 주로 AI가 생성한 작품은 접수 불가',elig:'★ 작가 또는 스토리작가 중 1인이 비일본인이어야 함 — 한국인에게 유리한 구조. 기수상작은 재응모 불가',desc:'일본 외무성 주최 국제 만화상. 수상 시 일본 초청·출판 접점 확보',url:'https://www.manga-award.mofa.go.jp/en/'},
-{c:'fund',f:['t','g'],country:'일본',rgroup:'일본',name:'Kodansha Manga Academy Award (MANGAKA Discovery)',months:[6,7],sub:7,ev:0,when:'접수 마감 7/22 (JST 기준)',elig:'해외 창작자 대상으로 개설된 상이라 한국인 응모 가능 · 상세 분량 규정은 공식 페이지 확인',desc:'코단샤가 해외 창작자를 겨냥해 신설한 글로벌 만화상. 영어 응모 가능, 편집자 연결 목적',url:'https://manga-academy.kodansha.com/award/mangaka-discovery/'},
+{c:'fund',f:['t'],country:'한국',rgroup:'한국',name:'네이버웹툰 지상최대공모전 (슈퍼루키전)',months:[3,4],sub:4,ev:0,dl:'04-10',when:'접수 4월 초 (1기 4/6~4/10) · 기수제 운영',run:'1화 완성 원고 + 2~3화 글콘티 + 20~30화 완결 시놉시스 · 스크롤뷰 가로 690px JPG · 화당 컷 수 제한 없음',elig:'⚠ 만 15세 이상 + 플랫폼 정식 연재 경력이 없는 신인만 · 본인이 온전한 저작권 보유',desc:'국내 최대 규모 웹툰 공모전. 대상 2천만원·최우수 1천만원, 수상 시 정식 연재·매니지먼트 연결',url:'https://comic.naver.com'},
+{c:'fund',f:['t'],country:'한국',rgroup:'한국',name:'레진&봄툰 노블코믹스 각색 콘티 공모전',months:[5,6],sub:6,ev:0,dl:'06-15',when:'접수 5/13~6/15 (연도별 변동)',run:'웹소설 원작을 웹툰 콘티로 각색해 제출 · 수상 시 상금 100만원 + 연재 계약',elig:'만 19세 이상 · 개인 자격 1인 1작품 · 기성·신인 모두 응모 가능',desc:'성인 로맨스 노블코믹스 각색 콘티 공모. 연재처 확보로 바로 이어지는 구조',url:'https://www.lezhin.com'},
+{c:'award',f:['t','g'],country:'일본',rgroup:'일본',name:'일본 국제만화상 (Japan International MANGA Award, 외무성)',months:[4,5,6],sub:6,ev:0,dl:'06-30',when:'접수 4/15~6/30 (제20회 기준)',run:'16페이지 초과 · 최근 3년 내 창작 · 기출간/미출간 모두 가능 · PDF 또는 인쇄본 · 언어 무관 · ⚠ 플롯·구성·작화를 주로 AI가 생성한 작품은 접수 불가',elig:'★ 작가 또는 스토리작가 중 1인이 비일본인이어야 함 — 한국인에게 유리한 구조. 기수상작은 재응모 불가',desc:'일본 외무성 주최 국제 만화상. 수상 시 일본 초청·출판 접점 확보',url:'https://www.manga-award.mofa.go.jp/en/'},
+{c:'fund',f:['t','g'],country:'일본',rgroup:'일본',name:'Kodansha Manga Academy Award (MANGAKA Discovery)',months:[6,7],sub:7,ev:0,dl:'07-22',when:'접수 마감 7/22 (JST 기준)',elig:'해외 창작자 대상으로 개설된 상이라 한국인 응모 가능 · 상세 분량 규정은 공식 페이지 확인',desc:'코단샤가 해외 창작자를 겨냥해 신설한 글로벌 만화상. 영어 응모 가능, 편집자 연결 목적',url:'https://manga-academy.kodansha.com/award/mangaka-discovery/'},
 {c:'award',f:['t','g','a'],country:'한국',rgroup:'한국',name:'대한민국 콘텐츠대상 — 만화·애니메이션 부문',months:[7,8,11],sub:8,ev:11,when:'출품 여름 · 시상 11~12월',desc:'문체부 주최 국내 최고 권위 콘텐츠 시상식. 대통령상·국무총리상 포함',url:'https://www.kocca.kr'},
 {c:'award',f:['t','g','a'],country:'한국',rgroup:'한국',name:'대한민국 콘텐츠대상 — 스토리 부문 공모',months:[5,6],sub:6,ev:0,when:'접수 늦봄~초여름',desc:'만화·애니·영상으로 발전 가능한 순수 창작 스토리 공모',url:'https://storyum.kr'},
 {c:'award',f:['t','g'],country:'한국',rgroup:'한국',name:'부천만화대상',months:[6,9],sub:6,ev:9,when:'출품·추천 여름 · 시상 가을(BICOF)',desc:'2004년부터 이어진 국내 최고 권위 만화상. 대상·신인상 등',url:'https://www.komacon.kr'},
 {c:'award',f:['t','g'],country:'한국',rgroup:'한국',name:'오늘의 우리만화',months:[8,11],sub:8,ev:11,when:'추천·심사 하반기 · 발표 연말',desc:'문체부·만화영상진흥원이 한 해 대표 만화 5작품 선정 (1999~)',url:'https://www.komacon.kr'},
-{c:'fund',f:['t','g'],country:'한국',rgroup:'한국',name:'전국 장애인 웹툰·일러스트 공모전 (한국만화영상진흥원)',months:[7,8],sub:8,ev:0,when:'접수 7/15~8/7 · 수상작 발표 8/21',run:'총상금 600만원 · 대상 1 · 금상 2 · 은상 2 · 동상 2 · 장려상 20 (총 27명) · 2026년 주제 "함께해서 더 즐거운 우리"',elig:'⚠ 장애인 아마추어 작가 대상 (웹툰·일러스트 창작에 관심 있으면 누구나)',desc:'장애 예술인의 창작 참여 기회를 넓히는 공모전. 아마추어 대상이라 진입 문턱이 낮음',url:'https://www.komacon.kr'},
+{c:'fund',f:['t','g'],country:'한국',rgroup:'한국',name:'전국 장애인 웹툰·일러스트 공모전 (한국만화영상진흥원)',months:[7,8],sub:8,ev:0,dl:'08-07',when:'접수 7/15~8/7 · 수상작 발표 8/21',run:'총상금 600만원 · 대상 1 · 금상 2 · 은상 2 · 동상 2 · 장려상 20 (총 27명) · 2026년 주제 "함께해서 더 즐거운 우리"',elig:'⚠ 장애인 아마추어 작가 대상 (웹툰·일러스트 창작에 관심 있으면 누구나)',desc:'장애 예술인의 창작 참여 기회를 넓히는 공모전. 아마추어 대상이라 진입 문턱이 낮음',url:'https://www.komacon.kr'},
 {c:'award',f:['t','g'],country:'한국',rgroup:'한국',name:'대한민국 만화평론 공모전',months:[7,8],sub:8,ev:0,when:'접수 여름 (연도별 변동)',desc:'만화·웹툰 평론 공모, 총상금 1,600만원 규모. 창작 외 진입 루트',url:'https://www.komacon.kr'},
 {c:'award',f:['t','g'],country:'한국',rgroup:'한국',name:'대한민국 창작만화공모전',months:[6,7,8],sub:8,ev:0,when:'접수 여름 (연도별 변동)',desc:'20회 이상 이어진 신인 발굴 공모전. 단행본·웹툰 부문',url:'https://www.komacon.kr'},
 {c:'fest',f:['t','g'],country:'한국',rgroup:'한국',name:'BICOF 부천국제만화축제',months:[6,7,9],sub:7,ev:9,when:'참가·부스 모집 여름 · 개최 9월',desc:'국내 최대 만화 축제. 작가 부스·전시·비즈매칭·해외 출판사 상담',url:'https://www.bicof.com'},
-{c:'fest',f:['a','i'],country:'한국',rgroup:'한국',name:'BIAF 부천국제애니메이션페스티벌 — 국제경쟁',months:[3,4,5,6,7,10],sub:6,ev:10,when:'출품 3/30~6/30(단편)·7/31(장편) · 개최 10/23~27',desc:'아카데미 공인 영화제. 2025년 이후 완성작 대상이며 AI 활용 작품도 각 부문 출품 가능',url:'https://www.biaf.or.kr'},
-{c:'kr',f:['a'],country:'한국',rgroup:'한국',name:'BIAF 단편애니메이션 제작지원',months:[8,9],sub:9,ev:0,when:'접수 8/3~9/22',desc:'부천국제애니메이션페스티벌의 단편 제작지원 공모',url:'https://www.biaf.or.kr'},
+{c:'fest',f:['a','i'],country:'한국',rgroup:'한국',name:'BIAF 부천국제애니메이션페스티벌 — 국제경쟁',months:[3,4,5,6,7,10],sub:6,ev:10,dl:'06-30',when:'출품 3/30~6/30(단편)·7/31(장편) · 개최 10/23~27',desc:'아카데미 공인 영화제. 2025년 이후 완성작 대상이며 AI 활용 작품도 각 부문 출품 가능',url:'https://www.biaf.or.kr'},
+{c:'kr',f:['a'],country:'한국',rgroup:'한국',name:'BIAF 단편애니메이션 제작지원',months:[8,9],sub:9,ev:0,dl:'09-22',when:'접수 8/3~9/22',desc:'부천국제애니메이션페스티벌의 단편 제작지원 공모',url:'https://www.biaf.or.kr'},
 {c:'fest',f:['a'],country:'한국',rgroup:'한국',name:'서울인디애니페스트 (인디애니페스트)',months:[5,6,10],sub:6,ev:10,when:'출품 접수 봄~초여름 · 개최 가을',desc:'국내 대표 독립 애니메이션 영화제. 단편·장편·학생 부문',url:'https://www.ianifest.org'},
 {c:'fest',f:['t','a'],country:'한국',rgroup:'한국',name:'SICAF 서울국제만화애니메이션페스티벌',months:[],rolling:true,sub:0,ev:0,when:'2021년(25회) 이후 휴지 · 재개 여부 확인 필요',desc:'서울 대표 만화·애니 축제였던 행사. 재개 공고 시 웹툰·애니 공모 동반',url:'https://www.sicaf.org'},
 {c:'fest',f:['t','g'],country:'한국',rgroup:'한국',name:'서울일러스트레이션페어 (SIF)',months:[],rolling:true,sub:0,ev:0,when:'연 2회 개최 · 부스 신청은 회차별 오픈',desc:'국내 최대 일러스트·창작자 부스 페어. 작가 개인 부스로 원화·굿즈·단행본 직접 판매',url:'https://seoulillustrationfair.co.kr/participation-main/'},
@@ -374,8 +375,8 @@ const EVENTS = [
 {c:'award',f:['t','g'],country:'대만',rgroup:'아시아',name:'금만상 金漫獎 (대만 만화상)',months:[5,6,9],sub:6,ev:9,when:'출품 봄~초여름 · 시상 가을',desc:'대만 문화부 주최 만화 시상식. 해외 출판 이력 작품도 부문별 응모 가능',url:'https://www.moc.gov.tw'},
 {c:'fest',f:['t','g','a'],country:'싱가포르',rgroup:'아시아',name:'아시아 지역 코믹 컨벤션 아티스트 참가 (STGCC 등)',months:[3,4,9],sub:4,ev:9,when:'아티스트 부스 신청 봄 · 개최 가을',desc:'동남아 최대급 팝컬처 컨벤션. 아티스트 알리 부스로 아시아 팬 접점 확보',url:'https://singaporecomiccon.sg'},
 /* ═══════════ 북미 ═══════════ */
-{c:'award',f:['g','t'],country:'미국',rgroup:'북미',name:'아이스너 어워드 (Eisner Awards)',months:[2,3,7],sub:3,ev:7,when:'출품 마감 3/13 · 시상 7월 샌디에이고 코믹콘',run:'출품료 없음 · 디지털·웹코믹 전용 부문 있음 · 출판사가 폐업했거나 응모하지 않을 경우 창작자가 직접 출품 가능 · 실물 출품은 우편 발송',elig:'국적 제한 없음 · 번역 출간작·국제 부문 존재',desc:'만화계 최고 권위 시상식. 출판사·자가출판 모두 출품 가능',url:'https://www.comic-con.org/awards/eisner-awards/'},
-{c:'award',f:['g'],country:'미국',rgroup:'북미',name:'이그나츠 어워드 (Ignatz Awards)',months:[4,5,9],sub:5,ev:9,when:'접수 4/1~5/31 · 시상 9월 SPX',run:'전년 6/1~당해 5/31 발표작만 대상 · 온라인 접수 · 미니코믹(비상업 인쇄·직접 유통) 부문 별도',elig:'국적 제한 없음 · 자가출판·소규모 출판 창작자가 주 대상이라 인디 작가에게 문턱이 가장 낮은 편',desc:'소규모·독립 출판 만화 대상. 관객 투표 방식이라 대형 유통망 없이도 후보 진입 가능',url:'https://www.smallpressexpo.com/ignatz-submission-form/'},
+{c:'award',f:['g','t'],country:'미국',rgroup:'북미',name:'아이스너 어워드 (Eisner Awards)',months:[2,3,7],sub:3,ev:7,dl:'03-13',when:'출품 마감 3/13 · 시상 7월 샌디에이고 코믹콘',run:'출품료 없음 · 디지털·웹코믹 전용 부문 있음 · 출판사가 폐업했거나 응모하지 않을 경우 창작자가 직접 출품 가능 · 실물 출품은 우편 발송',elig:'국적 제한 없음 · 번역 출간작·국제 부문 존재',desc:'만화계 최고 권위 시상식. 출판사·자가출판 모두 출품 가능',url:'https://www.comic-con.org/awards/eisner-awards/'},
+{c:'award',f:['g'],country:'미국',rgroup:'북미',name:'이그나츠 어워드 (Ignatz Awards)',months:[4,5,9],sub:5,ev:9,dl:'05-31',when:'접수 4/1~5/31 · 시상 9월 SPX',run:'전년 6/1~당해 5/31 발표작만 대상 · 온라인 접수 · 미니코믹(비상업 인쇄·직접 유통) 부문 별도',elig:'국적 제한 없음 · 자가출판·소규모 출판 창작자가 주 대상이라 인디 작가에게 문턱이 가장 낮은 편',desc:'소규모·독립 출판 만화 대상. 관객 투표 방식이라 대형 유통망 없이도 후보 진입 가능',url:'https://www.smallpressexpo.com/ignatz-submission-form/'},
 {c:'award',f:['g','t'],country:'미국',rgroup:'북미',name:'하비 어워드 (Harvey Awards)',months:[4,5,7,10],sub:5,ev:10,when:'출품 봄 · 후보 발표 7월 · 시상 10월 NYCC',desc:'올해의 책·디지털·만화(만가)·국제 부문 등 7개 부문. 번역 출간작도 대상',url:'https://www.harveyawards.com'},
 {c:'award',f:['g'],country:'미국',rgroup:'북미',name:'링고 어워드 (Ringo Awards)',months:[3,5,9],sub:5,ev:9,when:'공개 투표 3~5월 · 시상 9월 볼티모어 코믹콘',desc:'마이크 위어링고 기념 만화 산업상. 팬·업계 투표 병행 구조',url:'https://ringoawards.com'},
 {c:'award',f:['g'],country:'미국',rgroup:'북미',name:'Cartoonist Studio Prize',months:[1,2],sub:2,ev:0,when:'접수 겨울 (연초 마감)',desc:'The Comics Journal·CCS 공동 주관. 올해의 그래픽노블/웹코믹 각 1편 시상',url:'https://www.tcj.com'},
@@ -392,9 +393,9 @@ const EVENTS = [
 {c:'fest',f:['a','i'],country:'미국',rgroup:'북미',name:'선댄스 영화제 단편 (애니 포함)',months:[8,9,1],sub:9,ev:1,when:'출품 마감 늦여름~가을 · 개최 1월',desc:'단편 애니 부문 존재. 선정 시 배급·에이전트 접점 최상급',url:'https://www.sundance.org'},
 {c:'fest',f:['a','i'],country:'미국',rgroup:'북미',name:'SXSW 단편·애니메이션',months:[8,9,10,3],sub:10,ev:3,when:'출품 마감 가을 · 개최 3월 오스틴',desc:'테크·크리에이티브 교차 영화제. AI 활용 작품에 개방적',url:'https://www.sxsw.com'},
 /* ═══════════ 유럽 ═══════════ */
-{c:'fest',f:['a','i'],country:'프랑스',rgroup:'유럽',name:'안시 국제애니메이션영화제 (Annecy)',months:[1,2,3,6],sub:2,ev:6,when:'단편 2/15 · 장편 3/15 마감 · 개최 6월',run:'단편 59분 59초 이하(크레딧 포함) · 장편 60분 초과 · 2025.1.1 이후 완성작 · 출품료 단편 €30, 장편 €100',desc:'세계 최대 애니메이션 영화제. 단편·장편·TV·학생·VR 부문',url:'https://www.annecyfestival.com/en/take-part/submit-film'},
+{c:'fest',f:['a','i'],country:'프랑스',rgroup:'유럽',name:'안시 국제애니메이션영화제 (Annecy)',months:[1,2,3,6],sub:2,ev:6,dl:'02-15',when:'단편 2/15 · 장편 3/15 마감 · 개최 6월',run:'단편 59분 59초 이하(크레딧 포함) · 장편 60분 초과 · 2025.1.1 이후 완성작 · 출품료 단편 €30, 장편 €100',desc:'세계 최대 애니메이션 영화제. 단편·장편·TV·학생·VR 부문',url:'https://www.annecyfestival.com/en/take-part/submit-film'},
 {c:'fund',f:['a'],country:'프랑스',rgroup:'유럽',name:'Annecy MIFA 피칭 (Mifa Pitches)',months:[2,3,6],sub:3,ev:6,when:'기획 접수 겨울~봄 · 피칭 6월',desc:'장편·TV시리즈·단편·XR 기획을 제작사/투자자 앞에서 피칭. 안시 마켓 연계',url:'https://www.annecyfestival.com/en/mifa'},
-{c:'fest',f:['a'],country:'크로아티아',rgroup:'유럽',name:'애니마페스트 자그레브 (Animafest Zagreb)',months:[1,2,3,6],sub:2,ev:6,when:'단편 2/1 · 장편 3/15 마감 · 개최 6/8~13',run:'단편 최대 40분 · 장편은 별도 부문',desc:'세계 4대 애니 영화제 중 하나. 실험·작가주의 단편 강세',url:'https://www.animafest.hr'},
+{c:'fest',f:['a'],country:'크로아티아',rgroup:'유럽',name:'애니마페스트 자그레브 (Animafest Zagreb)',months:[1,2,3,6],sub:2,ev:6,dl:'02-01',when:'단편 2/1 · 장편 3/15 마감 · 개최 6/8~13',run:'단편 최대 40분 · 장편은 별도 부문',desc:'세계 4대 애니 영화제 중 하나. 실험·작가주의 단편 강세',url:'https://www.animafest.hr'},
 {c:'fest',f:['g','t'],country:'프랑스',rgroup:'유럽',name:'앙굴렘 국제만화축제 (FIBD)',months:[9,10,11,1],sub:10,ev:1,when:'공식 선정 출품 가을 · 개최 1월 말',desc:'유럽 만화의 심장. 공식 경쟁 선정 시 유럽 출판 계약 가능성 급상승',url:'https://www.bdangouleme.com'},
 {c:'award',f:['g','t'],country:'프랑스',rgroup:'유럽',name:'앙굴렘 신인 공모 (Concours Jeunes Talents)',months:[10,11,12,1],sub:11,ev:1,when:'접수 가을 · 발표 1월 축제 중',run:'A3 규격 1~3페이지 완결 스토리 · 주제·형식 자유 · 20인 선정 후 수상 3인은 축제 초청(숙박·교통 지원)',elig:'⚠ 만 17세 이상 + 상업 출판 경력 없음(팬진·삽화·공동작업은 허용) · 역대 1등 수상자는 재응모 불가 · 국적 요건은 공식 규정에서 확인 권장',desc:'미출간 신인 대상 공모. 유럽 BD 등용문으로 통하는 대표 루트',url:'https://www.bdangouleme.com'},
 {c:'fest',f:['g','t'],country:'이탈리아',rgroup:'유럽',name:'루카 코믹스 앤 게임즈 (Lucca Comics & Games)',months:[5,6,7,10,11],sub:6,ev:11,when:'자가출판·아티스트 참가 신청 봄~여름 · 개최 10월 말~11월 초',desc:'유럽 최대 만화·게임 페어(관람객 30만+). 자가출판 구역·수상 부문 운영',url:'https://www.luccacomicsandgames.com'},
@@ -428,12 +429,12 @@ const EVENTS = [
 {c:'award',f:['t','g'],country:'온라인',rgroup:'글로벌',name:'Inktober 챌린지',months:[9,10],sub:10,ev:10,when:'매년 10월 진행',desc:'전 세계 잉크 드로잉 챌린지. 신작 홍보·팔로워 확보에 실효적인 연례 이벤트',url:'https://inktober.com'},
 /* ═══════════ AI 애니·AI 영상 ═══════════ */
 {c:'award',f:['i','a'],country:'미국',rgroup:'글로벌',name:'Runway AI Film Festival (AIFF)',months:[12,1,2,6],sub:2,ev:6,when:'출품 겨울 마감 · 상영 6월',run:'약 1~10분 (연도별로 상한이 바뀌어 왔음 — 공식 규정 확인 필수)',desc:'AI 영화제의 기준점. 상금 규모 크고 업계 주목도 최상급',url:'https://aiff.runwayml.com'},
-{c:'award',f:['i','a'],country:'이탈리아',rgroup:'글로벌',name:'Reply AI Film Festival',months:[4,5,6,9],sub:6,ev:9,when:'마감 6/2 · 결선 9월 베네치아',run:'1~40분 · 초과작은 롱폼 스포트라이트 특별부문 · 만 18세 이상',desc:'유럽 대형 AI 영화 공모. 파이널리스트는 베네치아 프리미어 초청',url:'https://challenges.reply.com/challenges/creative/aifilmfestival/home/'},
-{c:'award',f:['i','a'],country:'스위스',rgroup:'글로벌',name:'AI for Good Film Festival (ITU)',months:[4,5,7],sub:5,ev:7,when:'마감 5/15 · 7월 제네바 서밋 상영',run:'1~10분 · 2025.5~2026.5 완성작',desc:'UN 산하 ITU 주최. 사회적 주제 AI 영상 대상, 국제기구 노출',url:'https://aiforgood.itu.int/ai-for-good-film-festival/'},
-{c:'award',f:['i','a'],country:'모나코',rgroup:'글로벌',name:'AI Film Festival Monaco',months:[3,4],sub:4,ev:0,when:'마감 4/25',run:'최소 2분 이상 (상한은 공식 규정 확인)',desc:'모나코 개최 AI 영화제. 유럽 산업 관계자 접점',url:'https://aifilmfest-monaco.com/submission'},
-{c:'award',f:['i','a'],country:'카자흐스탄',rgroup:'글로벌',name:'Astana AI Film Festival (AAIFF)',months:[7,8],sub:8,ev:0,when:'마감 8/31 · 유튜브 링크로 무료 접수',run:'최대 10분 · 상금 총액 100만 달러 규모(주제·오픈 부문 합산)',desc:'접수 장벽이 가장 낮은 AI 영화제 중 하나. 링크 하나로 응모',url:'https://aaiff.ai'},
-{c:'award',f:['i','a'],country:'국제',rgroup:'글로벌',name:'AIFFI 국제 AI 단편영화제',months:[2,3],sub:3,ev:0,when:'마감 3/31',desc:'AI 생성 단편 전문 영화제. Festhome 통해 접수',url:'https://filmmakers.festhome.com/en/festival/aiffi-film-festival'},
-{c:'award',f:['i','a'],country:'국제',rgroup:'글로벌',name:'LifeArt AI Global Film Festival',months:[4,5,6],sub:6,ev:0,when:'정규 마감 5/1 · 레이트 6/2',desc:'AI 애니메이션(단편·장편)·AI 광고 등 8개 부문 운영',url:'https://www.lifeartfestival.com/ai'},
+{c:'award',f:['i','a'],country:'이탈리아',rgroup:'글로벌',name:'Reply AI Film Festival',months:[4,5,6,9],sub:6,ev:9,dl:'06-02',when:'마감 6/2 · 결선 9월 베네치아',run:'1~40분 · 초과작은 롱폼 스포트라이트 특별부문 · 만 18세 이상',desc:'유럽 대형 AI 영화 공모. 파이널리스트는 베네치아 프리미어 초청',url:'https://challenges.reply.com/challenges/creative/aifilmfestival/home/'},
+{c:'award',f:['i','a'],country:'스위스',rgroup:'글로벌',name:'AI for Good Film Festival (ITU)',months:[4,5,7],sub:5,ev:7,dl:'05-15',when:'마감 5/15 · 7월 제네바 서밋 상영',run:'1~10분 · 2025.5~2026.5 완성작',desc:'UN 산하 ITU 주최. 사회적 주제 AI 영상 대상, 국제기구 노출',url:'https://aiforgood.itu.int/ai-for-good-film-festival/'},
+{c:'award',f:['i','a'],country:'모나코',rgroup:'글로벌',name:'AI Film Festival Monaco',months:[3,4],sub:4,ev:0,dl:'04-25',when:'마감 4/25',run:'최소 2분 이상 (상한은 공식 규정 확인)',desc:'모나코 개최 AI 영화제. 유럽 산업 관계자 접점',url:'https://aifilmfest-monaco.com/submission'},
+{c:'award',f:['i','a'],country:'카자흐스탄',rgroup:'글로벌',name:'Astana AI Film Festival (AAIFF)',months:[7,8],sub:8,ev:0,dl:'08-31',when:'마감 8/31 · 유튜브 링크로 무료 접수',run:'최대 10분 · 상금 총액 100만 달러 규모(주제·오픈 부문 합산)',desc:'접수 장벽이 가장 낮은 AI 영화제 중 하나. 링크 하나로 응모',url:'https://aaiff.ai'},
+{c:'award',f:['i','a'],country:'국제',rgroup:'글로벌',name:'AIFFI 국제 AI 단편영화제',months:[2,3],sub:3,ev:0,dl:'03-31',when:'마감 3/31',desc:'AI 생성 단편 전문 영화제. Festhome 통해 접수',url:'https://filmmakers.festhome.com/en/festival/aiffi-film-festival'},
+{c:'award',f:['i','a'],country:'국제',rgroup:'글로벌',name:'LifeArt AI Global Film Festival',months:[4,5,6],sub:6,ev:0,dl:'06-02',when:'정규 마감 5/1 · 레이트 6/2',desc:'AI 애니메이션(단편·장편)·AI 광고 등 8개 부문 운영',url:'https://www.lifeartfestival.com/ai'},
 {c:'award',f:['i','a'],country:'국제',rgroup:'글로벌',name:'World AI Film Festival (WAIFF)',months:[3,4,5],sub:4,ev:0,when:'부문별 공모 (연도별 변동)',desc:'AI 영화 국제 경쟁. 부문 세분화로 인디 단독 창작자도 응모 가능',url:'https://worldaifilmfestival.com/the-competitions/'},
 {c:'fund',f:['i','a'],country:'온라인',rgroup:'글로벌',name:'Project Odyssey (AI 영화 대회)',months:[],rolling:true,sub:0,ev:0,when:'연 2회 시즌제 · 시즌 오픈 시 접수',desc:'세계 최대급 온라인 AI 영화 공모전. 상금·툴 크레딧 대규모',url:'https://www.projectodyssey.ai'},
 {c:'fund',f:['i','a'],country:'온라인',rgroup:'글로벌',name:'Curious Refuge AI 필름 커뮤니티·공모',months:[],rolling:true,sub:0,ev:0,when:'상시 (기수제 교육 + 수시 공모)',desc:'AI 영화 제작 커뮤니티. 정기 챌린지·쇼케이스로 노출 기회 제공',url:'https://www.curiousrefuge.com'}
@@ -640,9 +641,27 @@ function subMonths(e){
 }
 function isSubbing(e){ return subMonths(e).indexOf(CUR_M) >= 0; }
 
+/* 확정 마감일(dl, MM-DD)이 있으면 남은 날짜를 센다.
+   연도는 저장하지 않는다 — 매년 반복되므로 올해 날짜가 지났으면 내년으로 넘긴다. */
+function ddays(e){
+  if(!e.dl) return null;
+  var p = e.dl.split('-'), m = +p[0], d = +p[1];
+  var today = new Date(NOW.getFullYear(), NOW.getMonth(), NOW.getDate());
+  var t = new Date(NOW.getFullYear(), m-1, d);
+  if(t < today) t = new Date(NOW.getFullYear()+1, m-1, d);
+  return Math.round((t - today) / 86400000);
+}
+
 /* 접수 상태 — 개최는 여기 섞지 않는다(별도 배지로 뺀다) */
 function evStatus(e){
   if(e.rolling) return {t:'상시 접수', k:'roll', u:12};
+  var dd = ddays(e);
+  if(dd !== null){
+    if(dd === 0)  return {t:'오늘 마감', k:'urgent', u:0};
+    if(dd <= 7)   return {t:'D-'+dd+' 마감', k:'urgent', u:dd/30};
+    if(dd <= 45)  return {t:'D-'+dd+' 마감', k:'open',  u:dd/30};
+    return {t:'D-'+dd, k:'wait', u:dd/30};
+  }
   var u = untilM(e.sub);
   if(!e.sub) return {t:'', k:'', u:99};
   if(u===0) return {t:'이달 마감', k:'urgent', u:0};
@@ -664,7 +683,9 @@ function subRange(e){
   if(!ms.length) return '';
   var sorted = ms.slice().sort(function(a,b){ return a-b; });
   var txt = sorted.length===1 ? MO[sorted[0]] : MO[sorted[0]]+'~'+MO[sorted[sorted.length-1]];
-  return '<div class="csub'+(isSubbing(e)?' now':'')+'">📥 모집 '+txt+(e.sub?' · 마감 '+MO[e.sub]:'')+(isSubbing(e)?' · 지금 접수 기간':'')+'</div>';
+  var dlTxt = e.dl ? ' · 마감 ' + (+e.dl.split('-')[0]) + '/' + (+e.dl.split('-')[1])
+                   : (e.sub ? ' · 마감 '+MO[e.sub] : '');
+  return '<div class="csub'+(isSubbing(e)?' now':'')+'">📥 모집 '+txt+dlTxt+(isSubbing(e)?' · 지금 접수 기간':'')+'</div>';
 }
 function isOpenish(e){ var s=evStatus(e); return s.k==='urgent'||s.k==='open'||s.k==='roll'; }
 function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
